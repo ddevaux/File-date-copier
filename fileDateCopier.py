@@ -14,7 +14,7 @@ if args.mode == "R":
  
 	pathdates = OrderedDict()
 	
-	total_files, total_dirs = 0, 0
+	total_files = total_dirs = 0
  
 	def save_path(path):
 		pathdates[path] = (os.path.getatime(path), os.path.getmtime(path))
